@@ -70,7 +70,7 @@ const addManager = () => {
     ])
     .then(managerInput => {
         const  { name, id, email, officeNumber } = managerInput; 
-        const manager = new Manager (name, id, email, officeNumber);
+        const Manager = new manager (name, id, email, officeNumber);
 
         teamArray.push(manager); 
         console.log(manager); 
@@ -165,12 +165,12 @@ const addEmployee = () => {
         let employee; 
 
         if (role === "Engineer") {
-            employee = new Engineer (name, id, email, github);
+            employee = new engineer (name, id, email, github);
 
             console.log(employee);
 
         } else if (role === "Intern") {
-            employee = new Intern (name, id, email, school);
+            employee = new intern (name, id, email, school);
 
             console.log(employee);
         }
